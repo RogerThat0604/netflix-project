@@ -46,8 +46,29 @@ body{
     cursor: pointer;
 }
 
-.movie-poster-img{
+.movie-detail-container{
     display: flex;
     justify-content: flex-end;
 }
+
+.movie-poster-img{
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+   height: 450px;
+}
+
+.movie-info{
+    display: table-row;
+    justify-content: flex-end;
+}
+
+.movie-title{
+    font-size: 50px;
+}
+
+.movie-tagline{
+    font-style: italic;
+}
+
 

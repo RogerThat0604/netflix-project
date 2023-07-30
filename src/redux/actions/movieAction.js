@@ -46,13 +46,13 @@ function getMovies(){
 
 function getMovieDetail(movie_id){
     return async (dispatch) =>{
-        const movieDetailApi = api.get(`/movie/${movie_id}?api_key=${api_key}&language-en`);
+        const movieDetailApi = api.get(`/movie/${movie_id}?api_key=${api_key}`);
         let [movieDetail,] = await Promise.all([movieDetailApi,]);
         console.log("영화 디테일 정보들" ,movieDetail);
         dispatch({type:"GET_MOVIE_DETAIL_REQUEST",
                 payload:{
                   selectedMovie: movieDetail.data,
-                }})
+                }});
 }
 } 
 
